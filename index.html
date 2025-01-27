@@ -28,7 +28,11 @@
                 --font-manrope: "Manrope", 'serif';
             }
             .section-title {
-                @apply font-extrabold text-title text-5xl mb-5;
+                @apply font-extrabold text-title text-4xl sm:text-5xl mb-5;
+            }
+
+            .section-description {
+                @apply max-w-4xl mx-auto text-desc font-semibold sm:font-medium;
             }
 
             .wrapper {
@@ -53,7 +57,7 @@
             </div>
             <!-- Banner Image -->
             <div class="relative">
-                <img class="pt-8" src="images/banner.png" alt="">
+                <img class="mt-8" src="images/banner.png" alt="">
                 <!-- Star Box -->
                 <div class="absolute -mt-16 flex items-center gap-4 rounded-lg bg-white shadow-sm px-6 py-5">
                     <i class="fa-solid fa-star text-4xl text-secondary"></i>
@@ -67,9 +71,83 @@
             </div>
             <!-- Banner Section End -->
         </header>
-        <main>
+        <main class="wrapper">
             <!-- Features Section Start -->
-
+            <section class="my-12 sm:my-32">
+                <h2 class="section-title text-center">
+                    Our Featured Products
+                </h2>
+                <p class="section-description text-center">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+                <!-- Feature Cards -->
+                <div class="grid gap-6 mt-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Card 1 -->
+                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                        <!-- Card Image -->
+                        <div class="mb-8">
+                            <img class="mx-auto" src="images/tea-1.png" alt="">
+                        </div>
+                        <!-- Card Content -->
+                        <div class="text-center">
+                            <h3 class="text-2xl font-extrabold text-title">
+                                Milk Tea
+                            </h3>
+                            <p class="text-desc font-semibold">
+                                Creamer could be replaced by fresh milk
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                        <!-- Card Image -->
+                        <div class="mb-8">
+                            <img class="mx-auto" src="images/tea-2.png" alt="">
+                        </div>
+                        <!-- Card Content -->
+                        <div class="text-center">
+                            <h3 class="text-2xl font-extrabold text-title">
+                                Black Tea
+                            </h3>
+                            <p class="text-desc font-semibold">
+                                Creamer could be replaced by fresh milk
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                        <!-- Card Image -->
+                        <div class="mb-8">
+                            <img class="mx-auto" src="images/tea-3.png" alt="">
+                        </div>
+                        <!-- Card Content -->
+                        <div class="text-center">
+                            <h3 class="text-2xl font-extrabold text-title">
+                                Lemon Tea
+                            </h3>
+                            <p class="text-desc font-semibold">
+                                Creamer could be replaced by fresh milk
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                        <!-- Card Image -->
+                        <div class="mb-8">
+                            <img class="mx-auto" src="images/tea-4.png" alt="">
+                        </div>
+                        <!-- Card Content -->
+                        <div class="text-center">
+                            <h3 class="text-2xl font-extrabold text-title">
+                                Green Tea
+                            </h3>
+                            <p class="text-desc font-semibold">
+                                Creamer could be replaced by fresh milk
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- Features Section End -->
 
             <!-- Presentation Section Start -->
