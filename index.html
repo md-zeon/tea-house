@@ -27,12 +27,44 @@
                 --color-desc: #777777; /*dark 3*/
                 --font-manrope: "Manrope", 'serif';
             }
+            .section-title {
+                @apply font-extrabold text-title text-5xl mb-5;
+            }
+
+            .wrapper {
+                @apply max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 py-8 md:py-14;
+            }
         </style>
 	</head>
 	<body class="font-manrope">
-        <header>
+        <header class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-3">
             <!-- Banner Section Start -->
-             
+            <div class="space-y-7">
+                <h1 class="text-title font-extrabold leading-snug text-5xl sm:text-7xl">
+                    It's good <br class="hidden md:block">
+                    tea time at The <br class="hidden md:block">
+                    Tea House
+                </h1>
+                <p class="text-lg font-medium text-desc">
+                    Tea and Botanical Solutions Supplier Give Optimum 
+                    Satisfaction To Your Taste Buds.
+                </p>
+                <button class="text-xl font-bold px-5 py-4 rounded-lg text-white bg-gradient-to-l hover:from-secondary hover:to-primary from-primary to-secondary transition-colors duration-500 cursor-pointer">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i> </button>
+            </div>
+            <!-- Banner Image -->
+            <div class="relative">
+                <img class="pt-8" src="images/banner.png" alt="">
+                <!-- Star Box -->
+                <div class="absolute -mt-16 flex items-center gap-4 rounded-lg bg-white shadow-sm px-6 py-5">
+                    <i class="fa-solid fa-star text-4xl text-secondary"></i>
+                    <div class="space-y-1">
+                        <h3 class="text-title font-extrabold">5.00</h3>
+                        <p class="text-desc font-semibold">
+                            Trust Pilot Ratings
+                        </p>
+                    </div>
+                </div>
+            </div>
             <!-- Banner Section End -->
         </header>
         <main>
