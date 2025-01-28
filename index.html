@@ -27,6 +27,7 @@
                 --color-desc: #777777; /*dark 3*/
                 --font-manrope: "Manrope", 'serif';
                 --animate-wiggle: wiggle 10s ease-in-out infinite;
+                --animate-float: float 5s ease-in-out infinite;
                 @keyframes wiggle {
                     0%,
                     100% {
@@ -34,6 +35,15 @@
                     }
                     50% {
                     transform: rotate(3deg) translate(20px, -20px);
+                    }
+                }
+                @keyframes float {
+                    0%,
+                    100% {
+                    transform: translateY(0);
+                    }
+                    50% {
+                    transform: translateY(1.25rem);
                     }
                 }
             }
@@ -46,7 +56,7 @@
             }
 
             .wrapper {
-                @apply max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 py-8 md:py-14;
+                @apply max-w-screen-xl mx-auto px-4 sm:px-8 md:px-14 lg:px-16 py-8 md:py-14;
             }
         </style>
 	</head>
@@ -161,7 +171,7 @@
             <!-- Features Section End -->
 
             <!-- Presentation Section Start -->
-            <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 my-12 sm:my-32">
                 <!-- Presentation Image -->
                 <div class="grid grid-cols-2 grid-rows-3 gap-7">
                     <div class="rounded-xl bg-gradient-to-r from-primary to-secondary opacity-10"></div>
@@ -198,7 +208,48 @@
             <!-- Presentation Section End -->
 
             <!-- Clients Section Start -->
-
+            <section class="grid gap-12 place-items-center grid-cols-1 lg:grid-cols-2 bg-[url('images/bg_cup.png'),linear-gradient(to_left,#FF8938,#FF0000)] bg-no-repeat md:bg-[bottom_left_25%] md:p-20 p-6 rounded-2xl">
+                <!-- Content -->
+                <div class="px-6 md:px-0">
+                    <h2 class="text-white font-extrabold text-4xl sm:text-5xl mb-5">
+                        Meet Our Super Clients
+                    </h2>
+                    <p class="text-white mb-7 max-w-4xl mx-auto font-semibold sm:font-medium">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    </p>
+                    <button class="text-xl font-bold px-7 py-4 rounded-lg bg-white cursor-pointer"><span class=" bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Show All</span></button>
+                </div>
+                <!-- Client Slider -->
+                <div class="relative md:animate-float space-y-4">
+                    <!-- Client Prev-->
+                    <div class="relative p-12 max-w-md ml-auto sm:left-6 bg-white rounded-xl opacity-30">
+                        <img class="absolute -top-4 -left-4 p-1 bg-white rounded-full" src="images/client.png" alt="">
+                        <p class="leading-7 text-desc">
+                            We are providing the best and suitable home insurance services for the people who are interested to treatment
+                        </p>
+                        <h4 class="text-title font-bold mt-5 leading-7">Ilham Yuda</h4>
+                        <h6 class="text-[#5D5A6F] font-medium">Businessman</h6>
+                    </div>
+                    <!-- Client Current -->
+                    <div class="absolute top-1/4 sm:-left-8 z-10 max-w-md p-12 bg-white rounded-xl">
+                        <img class="absolute -top-4 -left-4 p-1 bg-white rounded-full" src="images/client.png" alt="">
+                        <p class="leading-7 text-desc">
+                            We are providing the best and suitable home insurance services for the people who are interested to treatment
+                        </p>
+                        <h4 class="text-title font-bold mt-5 leading-7">Ilham Yuda</h4>
+                        <h6 class="text-[#5D5A6F] font-medium">Businessman</h6>
+                    </div>
+                    <!-- Client Next -->
+                    <div class="relative p-12 max-w-md ml-auto sm:left-6 bg-white rounded-xl opacity-30">
+                        <img class="absolute -top-4 -left-4 p-1 bg-white rounded-full" src="images/client.png" alt="">
+                        <p class="leading-7 text-desc">
+                            We are providing the best and suitable home insurance services for the people who are interested to treatment
+                        </p>
+                        <h4 class="text-title font-bold mt-5 leading-7">Ilham Yuda</h4>
+                        <h6 class="text-[#5D5A6F] font-medium">Businessman</h6>
+                    </div>
+                </div>
+            </section>
             <!-- Clients Section End -->
 
             <!-- News Section Start -->
