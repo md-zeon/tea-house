@@ -34,7 +34,7 @@
                     transform: rotate(-3deg), translate(0, 0);
                     }
                     50% {
-                    transform: rotate(3deg) translate(20px, -20px);
+                    transform: rotate(3deg) translate(1.25rem, -1.25rem);
                     }
                 }
                 @keyframes float {
@@ -103,7 +103,7 @@
                 <!-- Feature Cards -->
                 <div class="grid gap-6 mt-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     <!-- Card 1 -->
-                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                    <div class="p-8 hover:scale-[1.02] transition-transform duration-500 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
                         <!-- Card Image -->
                         <div class="mb-8">
                             <img class="mx-auto" src="images/tea-1.png" alt="">
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                    <div class="p-8 hover:scale-[1.02] transition-transform duration-500 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
                         <!-- Card Image -->
                         <div class="mb-8">
                             <img class="mx-auto" src="images/tea-2.png" alt="">
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                    <div class="p-8 hover:scale-[1.02] transition-transform duration-500 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
                         <!-- Card Image -->
                         <div class="mb-8">
                             <img class="mx-auto" src="images/tea-3.png" alt="">
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
+                    <div class="p-8 hover:scale-[1.02] transition-transform duration-500 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400]">
                         <!-- Card Image -->
                         <div class="mb-8">
                             <img class="mx-auto" src="images/tea-4.png" alt="">
@@ -174,14 +174,14 @@
             <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 my-12 sm:my-32">
                 <!-- Presentation Image -->
                 <div class="grid grid-cols-2 grid-rows-3 gap-7">
-                    <div class="rounded-xl bg-gradient-to-r from-primary to-secondary opacity-10"></div>
-                    <div class="flex items-center justify-center px-8 py-12 row-span-2 bg-[#e6a52319] rounded-xl">
-                        <img src="images/fresh-1.png" alt="">
+                    <div class="rounded-xl bg-gradient-to-r hover:from-secondary hover:to-primary hover:opacity-15 transition-colors duration-500 from-primary to-secondary opacity-10"></div>
+                    <div class="flex items-center justify-center px-8 py-12 row-span-2 bg-[#e6a523]/10 hover:bg-[#e6a523]/20 transition-colors duration-1000 rounded-xl">
+                        <img class="animate-float" src="images/fresh-1.png" alt="">
                     </div>
-                    <div class="flex items-center justify-center px-8 py-12 row-span-2 bg-[#57763919] rounded-xl">
-                        <img src="images/fresh-2.png" alt="">
+                    <div class="flex items-center justify-center px-8 py-12 row-span-2 bg-[#577639]/10 hover:bg-[#577639]/20 transition-colors duration-1000 rounded-xl">
+                        <img class="animate-float" src="images/fresh-2.png" alt="">
                     </div>
-                    <div class="rounded-xl bg-gradient-to-r from-[#D9D9D9] to-white/0"></div>
+                    <div class="rounded-xl bg-gradient-to-r hover:from-white/20 hover:to-[#D9D9D9]/70 from-[#D9D9D9] to-white/0 transition-colors duration-500"></div>
                 </div>
                 <!-- Presentation Content -->
                 <div class="">
@@ -217,7 +217,7 @@
                     <p class="text-white mb-7 max-w-4xl mx-auto font-semibold sm:font-medium">
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
                     </p>
-                    <button class="text-xl font-bold px-7 py-4 rounded-lg bg-white cursor-pointer"><span class=" bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Show All</span></button>
+                    <button class="text-xl font-bold px-7 py-4 rounded-lg bg-white hover:bg-black transition-colors duration-1000 cursor-pointer"><span class=" bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Show All</span></button>
                 </div>
                 <!-- Client Slider -->
                 <div class="relative md:animate-float space-y-4">
@@ -229,6 +229,7 @@
                         </p>
                         <h4 class="text-title font-bold mt-5 leading-7">Ilham Yuda</h4>
                         <h6 class="text-[#5D5A6F] font-medium">Businessman</h6>
+                        <img class="absolute right-6" src="images/circles.png" alt="">
                     </div>
                     <!-- Client Current -->
                     <div class="absolute top-1/4 sm:-left-8 z-10 max-w-md p-12 bg-white rounded-xl">
@@ -238,6 +239,7 @@
                         </p>
                         <h4 class="text-title font-bold mt-5 leading-7">Ilham Yuda</h4>
                         <h6 class="text-[#5D5A6F] font-medium">Businessman</h6>
+                        <img class="absolute right-6" src="images/circles.png" alt="">
                     </div>
                     <!-- Client Next -->
                     <div class="relative p-12 max-w-md ml-auto sm:left-6 bg-white rounded-xl opacity-30">
@@ -247,6 +249,7 @@
                         </p>
                         <h4 class="text-title font-bold mt-5 leading-7">Ilham Yuda</h4>
                         <h6 class="text-[#5D5A6F] font-medium">Businessman</h6>
+                        <img class="absolute right-6" src="images/circles.png" alt="">
                     </div>
                 </div>
             </section>
@@ -263,7 +266,7 @@
                 <!-- News Cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
                     <!-- News Card 1 -->
-                    <div class="p-6 border border-[#D2D2D2] rounded-xl">
+                    <div class="p-6 hover:shadow-xl border border-[#D2D2D2] rounded-xl">
                         <div class="mb-5 rounded-xl">
                             <img class="rounded-xl" src="images/news-1.png" alt="">
                         </div>
@@ -277,7 +280,7 @@
                         </div>
                     </div>
                     <!-- News Card 2 -->
-                    <div class="p-6 border border-[#D2D2D2] rounded-xl">
+                    <div class="p-6 hover:shadow-xl border border-[#D2D2D2] rounded-xl">
                         <div class="mb-5 rounded-xl">
                             <img class="rounded-xl" src="images/news-2.png" alt="">
                         </div>
@@ -291,7 +294,7 @@
                         </div>
                     </div>
                     <!-- News Card 3 -->
-                    <div class="p-6 border border-[#D2D2D2] rounded-xl">
+                    <div class="p-6 hover:shadow-xl border border-[#D2D2D2] rounded-xl">
                         <div class="mb-5 rounded-xl">
                             <img class="rounded-xl" src="images/news-3.png" alt="">
                         </div>
@@ -313,10 +316,10 @@
             <div class="wrapper space-y-12">
                 <div class="flex flex-col sm:flex-row gap-6 items-center justify-between">
                     <div>
-                        <img src="images/cup.png" alt="">
+                        <img class="cursor-pointer" src="images/cup.png" alt="">
                     </div>
                     <div class="flex gap-2 sm:gap-10 items-center">
-                        <span>Ready to get strated?</span>
+                        <span class="font-semibold text-title">Ready to get strated?</span>
                         <button class="sm:mr-14 text-xl font-bold px-5 py-4 rounded-lg text-white bg-gradient-to-l hover:from-secondary hover:to-primary from-primary to-secondary transition-colors duration-500 cursor-pointer">Get Started</button>
                     </div>
                 </div>
